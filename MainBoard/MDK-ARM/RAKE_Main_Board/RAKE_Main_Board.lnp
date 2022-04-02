@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"rake_main_board\startup_stm32f407xx.o"
+"rake_main_board\main.o"
+"rake_main_board\stm32f4xx_it.o"
+"rake_main_board\stm32f4xx_hal_msp.o"
+"rake_main_board\stm32f4xx_hal_tim.o"
+"rake_main_board\stm32f4xx_hal_tim_ex.o"
+"rake_main_board\stm32f4xx_hal_rcc.o"
+"rake_main_board\stm32f4xx_hal_rcc_ex.o"
+"rake_main_board\stm32f4xx_hal_flash.o"
+"rake_main_board\stm32f4xx_hal_flash_ex.o"
+"rake_main_board\stm32f4xx_hal_flash_ramfunc.o"
+"rake_main_board\stm32f4xx_hal_gpio.o"
+"rake_main_board\stm32f4xx_hal_dma_ex.o"
+"rake_main_board\stm32f4xx_hal_dma.o"
+"rake_main_board\stm32f4xx_hal_pwr.o"
+"rake_main_board\stm32f4xx_hal_pwr_ex.o"
+"rake_main_board\stm32f4xx_hal_cortex.o"
+"rake_main_board\stm32f4xx_hal.o"
+"rake_main_board\stm32f4xx_hal_exti.o"
+"rake_main_board\stm32f4xx_hal_uart.o"
+"rake_main_board\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "RAKE_Main_Board\RAKE_Main_Board.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "RAKE_Main_Board.map" -o RAKE_Main_Board\RAKE_Main_Board.axf
